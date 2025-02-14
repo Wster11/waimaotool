@@ -17,49 +17,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "外贸工具箱 | 一站式外贸工作效率工具集合",
-  description: "专为外贸人打造的在线工具箱，包含60+款精选工具，涵盖市场调研、翻译助手、邮件营销、跨境电商等全方位外贸工具，助力提升外贸工作效率。",
-  keywords: [
-    "外贸工具",
-    "外贸工具箱",
-    "外贸软件",
-    "外贸必备工具",
-    "外贸营销工具",
-    "外贸翻译工具",
-    "跨境电商工具",
-    "外贸邮件工具",
-    "外贸效率工具",
-    "外贸必备软件"
-  ],
-  authors: [{ name: "外贸工具箱" }],
-  creator: "外贸工具箱",
-  publisher: "外贸工具箱",
-  openGraph: {
-    type: "website",
-    locale: "zh_CN",
-    url: "https://yourdomain.com",
-    title: "外贸工具箱 | 一站式外贸工作效率工具集合",
-    description: "专为外贸人打造的在线工具箱，包含60+款精选工具，涵盖市场调研、翻译助手、邮件营销、跨境电商等全方位外贸工具。",
-    siteName: "外贸工具箱",
+  metadataBase: new URL('https://your-domain.com'),
+  title: {
+    template: '%s - 外贸工具箱',
+    default: '外贸工具箱 - 提升外贸工作效率的必备工具集',
   },
+  description: '专业的外贸工具导航平台，精选60+款高效工具，包含文案、翻译、图片处理、市场调研等全方位工具。让全球贸易，触手可及。',
+  keywords: ['外贸工具', '外贸软件', '跨境电商工具', '外贸营销', '市场调研', '翻译工具'],
+  authors: [{ name: '外贸工具箱' }],
+  creator: '外贸工具箱',
+  publisher: '外贸工具箱',
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
     },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'zh_CN',
+    url: 'https://your-domain.com',
+    title: '外贸工具箱 - 提升外贸工作效率的必备工具集',
+    description: '专业的外贸工具导航平台，精选60+款高效工具。让全球贸易，触手可及。',
+    siteName: '外贸工具箱',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '外贸工具箱 - 提升外贸工作效率的必备工具集',
+    description: '专业的外贸工具导航平台，精选60+款高效工具。让全球贸易，触手可及。',
   },
   verification: {
     google: 'your-google-verification-code',
     baidu: 'your-baidu-verification-code'
   },
   alternates: {
-    canonical: 'https://yourdomain.com'
-  }
+    canonical: 'https://your-domain.com',
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
 };
 
 export default function RootLayout({

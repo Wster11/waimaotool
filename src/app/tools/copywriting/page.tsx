@@ -1,5 +1,6 @@
 import { ToolsLayout } from "@/components/tools-layout"
 import { getToolsByCategory } from "@/lib/tools"
+import { Metadata } from 'next'
 
 const tools = [
   {
@@ -57,4 +58,14 @@ export default function CopywritingTools() {
       tools={tools}
     />
   )
+}
+
+export const metadata: Metadata = {
+  title: '外贸文案工具 - AI驱动的文案创作与优化工具集',
+  description: '精选10+款外贸文案工具，包括ChatGPT、Copy.ai等AI写作助手，帮助您快速生成高质量的外贸产品描述和营销文案。',
+  keywords: ['外贸文案', 'AI写作', '产品描述', '营销文案', '文案优化'],
+  openGraph: {
+    title: '外贸文案工具 - AI驱动的文案创作与优化工具集',
+    description: '精选10+款外贸文案工具，包括ChatGPT、Copy.ai等AI写作助手。',
+  }
 } 
