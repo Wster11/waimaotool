@@ -4,7 +4,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Sidebar } from "@/components/sidebar";
 import "./globals.css";
-import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +49,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
-    baidu: 'your-baidu-verification-code'
   },
   alternates: {
     canonical: 'https://your-domain.com',

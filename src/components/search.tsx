@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { Search } from 'lucide-react'
-import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { searchTools, Tool } from '@/lib/tools'
 
@@ -103,11 +102,6 @@ export function SearchTools() {
     setQuery('')
     // 添加 highlight 参数到 URL
     router.push(`${tool.href}?highlight=${tool.id}`)
-  }
-
-  // 点击外部关闭搜索
-  const handleClickOutside = () => {
-    setIsOpen(false)
   }
 
   return (

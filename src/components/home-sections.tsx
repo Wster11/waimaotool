@@ -1,7 +1,7 @@
 'use client'
 
 import { Tool } from '@/lib/tools'
-import { RecentTool, FavoriteTool, ToolStats } from '@/types'
+import { ToolStats } from '@/types'
 import { Card } from './ui/card'
 import Link from 'next/link'
 

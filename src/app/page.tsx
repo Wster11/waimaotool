@@ -1,4 +1,3 @@
-import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import { Metadata } from 'next'
 import { jsonLdScriptProps } from 'react-schemaorg'

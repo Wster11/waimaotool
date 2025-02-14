@@ -1,3 +1,5 @@
+import { Tool } from "./tools";
+
 export function getWebsiteSchema() {
   return {
     "@context": "https://schema.org",
